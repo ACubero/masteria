@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Máster en IA - Portal Académico</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            animation: {
+              'spin-slow': 'spin 8s linear infinite',
+              'bounce-slow': 'bounce 2s ease-in-out infinite',
+              'progress': 'progress 3s ease-in-out infinite',
+            },
+            keyframes: {
+              progress: {
+                '0%': { width: '0%', marginLeft: '0%' },
+                '50%': { width: '100%', marginLeft: '0%' },
+                '100%': { width: '0%', marginLeft: '100%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #020617; /* bg-slate-950 */
+        color: #f1f5f9; /* text-slate-100 */
+        font-size: 1.125rem; /* Base text larger */
+      }
+      .glass {
+        background: rgba(15, 23, 42, 0.8); /* slate-900 with opacity */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #1e293b; /* slate-800 */
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #334155; /* slate-700 */
+      }
+      /* Ajustes para Markdown en modo oscuro - Aumentando tamaños */
+      .prose { max-width: none; font-size: 1.125rem; }
+      .prose h1 { color: #f8fafc; font-weight: 800; margin-top: 2.5rem; font-size: 2.5rem; }
+      .prose h2 { color: #f1f5f9; font-weight: 700; border-bottom: 1px solid #1e293b; padding-bottom: 0.75rem; margin-top: 2.5rem; font-size: 2rem; }
+      .prose h3 { color: #e2e8f0; font-weight: 600; font-size: 1.75rem; margin-top: 2rem; }
+      .prose p { color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem; }
+      .prose strong { color: #818cf8; } /* indigo-400 */
+      .prose code { background: #1e293b; padding: 0.3rem 0.5rem; border-radius: 0.35rem; font-weight: 500; color: #a5b4fc; font-size: 0.95em; }
+      .prose blockquote { border-left-color: #6366f1; font-style: italic; background: rgba(30, 41, 59, 0.5); padding: 1.5rem; border-radius: 0 1.5rem 1.5rem 0; color: #94a3b8; font-size: 1.25rem; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.0",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1"
+  }
+}
+</script>
+</head>
+  <body class="dark">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
